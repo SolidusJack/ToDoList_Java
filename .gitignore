@@ -1,15 +1,15 @@
-# Target (diretório de build do Maven)
+
 target/
 
-# Arquivos específicos do Eclipse / STS 4
+
 .classpath
 .project
 .settings/
 *.launch
 
-# Arquivos temporários do Sistema Operacional
+
 .DS_Store
 Thumbs.db
 
-# Logs
+
 *.log
