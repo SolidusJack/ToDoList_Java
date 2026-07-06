@@ -6,13 +6,9 @@ public class TarefaComum extends Tarefa{
 		super(descricao);
 	}
 
-	
 	@Override
 	public String toString() {
 	    return super.toString() + "\n" +
 	           "------------------------------------";
 	}
-
-	
-	
 }

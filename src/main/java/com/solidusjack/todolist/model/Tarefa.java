@@ -1,5 +1,9 @@
 package com.solidusjack.todolist.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
 public abstract class Tarefa{
 	
 	private int id;
@@ -14,26 +18,6 @@ public abstract class Tarefa{
 		this.statusConclusao = false;
 	}
 	
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getDescricao() {
-		return descricao;
-	}
-	public void setDescricao(String descricao) {
-		this.descricao = descricao;
-	}
-	public boolean isStatusConclusao() {
-		return statusConclusao;
-	}
-	public void setStatusConclusao(boolean statusConclusao) {
-		this.statusConclusao = statusConclusao;
-	}
-
 	@Override
 	public String toString() {
 	    String status = this.statusConclusao ? "Concluída" : "Pendente";
@@ -43,10 +27,4 @@ public abstract class Tarefa{
 	           " Status   : " + status + "\n";
 	}
 
-
-
-
-	
-	
-	
 }

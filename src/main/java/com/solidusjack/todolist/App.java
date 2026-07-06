@@ -10,6 +10,7 @@ import com.solidusjack.todolist.repository.TarefaRepository;
 
 public class App {
     public static void main( String[] args ) {
+    	
     	Scanner sc = new Scanner(System.in);
     	
     	var repo = new TarefaRepository();
@@ -51,7 +52,7 @@ public class App {
             					Thread.sleep(2000);
             				} catch (InterruptedException e) {
             					System.out.println(e.getMessage());
-            				}
+            					}
             			}
             			case 2 -> { 
             				System.out.println("Digite a descrição da tarefa");
@@ -70,14 +71,14 @@ public class App {
             					Thread.sleep(2000);
             				} catch (InterruptedException e) {
             					System.out.println(e.getMessage());
-            				}
+            					}
             			}
             			
             			case 3 -> {
             				System.out.println("Retornando..");
             				break;
             			}
-            				
+            			default -> System.out.println("Digite uma das opções acima!");	
             		}
             }
             
@@ -87,7 +88,7 @@ public class App {
 					Thread.sleep(3000);
 				} catch (InterruptedException e) {
 					System.out.println(e.getMessage());
-				}
+					}
             }
 
             case 3 -> {
@@ -98,15 +99,17 @@ public class App {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					System.out.println(e.getMessage());
-				}
+					}
             }
             
             case 4 -> {
             	System.out.println("Saindo...");
             	OP = false;
             }
+            default -> System.out.println("Digite uma das opções acima!");
        }
     }
+    	
  sc.close();  	   	
-    }
+    } 
 }
