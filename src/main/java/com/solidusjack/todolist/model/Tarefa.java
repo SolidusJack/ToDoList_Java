@@ -5,15 +5,12 @@ import lombok.Setter;
 
 @Getter @Setter
 public abstract class Tarefa{
-	
+
 	private int id;
 	private String descricao;
 	private boolean statusConclusao;
 	
-	public static int contador = 1;
-	
-	protected Tarefa(String descricao) {
-		this.id = contador++;
+	public Tarefa(String descricao) {
 		this.descricao = descricao;
 		this.statusConclusao = false;
 	}

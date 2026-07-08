@@ -1,7 +1,11 @@
 package com.solidusjack.todolist.contract;
 
-public interface Gerenciavel {
+import com.solidusjack.todolist.model.Tarefa;
 
+public interface Gerenciavel {
+	
+	void adicionarTarefa(Tarefa tarefa);
+	
 	void concluirTarefa(int id);
 	
 	void exibirDetalhes();
