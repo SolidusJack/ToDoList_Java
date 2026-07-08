@@ -1,15 +1,14 @@
 
 target/
 
-
 .classpath
 .project
 .settings/
 *.launch
 
-
 .DS_Store
 Thumbs.db
 
-
 *.log
+
+src/main/resources/database.properties
